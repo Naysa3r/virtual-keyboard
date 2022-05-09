@@ -1,14 +1,14 @@
 export const keyboard_tpl = [
     ['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'NumpadSubstract', 'Equal', 'Backspace'],
-    ['Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash'],
+    ['Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'Delete'],
     ['CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter'],
-    ['ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Backquote', 'Period', 'Slash', 'ShiftRight'],
-    ['Control', 'OSLeft', 'AltLeft', 'Space', 'AltRight', 'OSRight', 'ControlRight']
+    ['ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ArrowUp', 'ShiftRight'],
+    ['Control', 'OSLeft', 'AltLeft', 'Space', 'AltRight', 'OSRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'ControlRight']
 ];
 
 export const keys = {
     'Backquote' : {
-        'key': '`',
+        'key': "`",
         'shift_key': '~',
         'rukey': 'ё',
         'shift_rukey': 'Ё',
@@ -214,6 +214,12 @@ export const keys = {
         'rukey': 'р',
         'shift_rukey': 'Р',
     },
+    'KeyJ' : {
+        'key': 'j',
+        'shift_key': 'J',
+        'rukey': 'о',
+        'shift_rukey': 'О',
+    },
     'KeyK' : {
         'key': 'k',
         'shift_key': 'K',
@@ -290,7 +296,7 @@ export const keys = {
         'rukey': 'ь',
         'shift_rukey': 'Ь',
     },
-    'Backquote' : {
+    'Comma' : {
         'key': ',',
         'shift_key': '<',
         'rukey': 'б',
@@ -303,12 +309,6 @@ export const keys = {
         'shift_rukey': 'Ю',
     },
     'Slash' : {
-        'key': '/',
-        'shift_key': '?',
-        'rukey': '.',
-        'shift_rukey': ',',
-    },
-    'ShiftLeft' : {
         'key': '/',
         'shift_key': '?',
         'rukey': '.',
@@ -334,7 +334,7 @@ export const keys = {
     },
     'Space' : {
         'key': ' ',
-        'dark': true
+        'dark': false
     },
     'AltRight' : {
         'key': 'Alt',
@@ -347,6 +347,35 @@ export const keys = {
     'ControlRight' : {
         'key': 'Ctrl',
         'dark': true
+    },
+    'ArrowUp' : {
+        'key': '▲',
+        'shift_key': '▲',
+        'rukey': '▲',
+        'shift_rukey': '▲',
+    },
+    'ArrowLeft' : {
+        'key': '◄',
+        'shift_key': '◄',
+        'rukey': '◄',
+        'shift_rukey': '◄',
+    },
+    'ArrowDown' : {
+        'key': '▼',
+        'shift_key': '▼',
+        'rukey': '▼',
+        'shift_rukey': '▼',
+    },
+    'ArrowRight' : {
+        'key': '►',
+        'shift_key': '►',
+        'rukey': '►',
+        'shift_rukey': '►',
+    },
+    'Delete' : {
+        'key': 'Del',
+        'dark': true
     }
+
     // ['Control', 'OSLeft', 'AltLeft', 'Space', 'AltRight', 'OSRight', 'ControlRight']
 }
