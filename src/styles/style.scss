@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 40px auto;
+    text-align: center;
+    font-family: "Trebuchet MS", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+    color: #ffffff;
+    .color {
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        font-weight: 500;
+        font-size: 20pt;
+        color: #e6ff5a;
+        text-shadow: 0 0 4px #000000;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Helvetica", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(237,246,6,1) 0%, rgba(120,129,0,1) 35%, rgba(40,39,39,1) 100%);
+}
+textarea {
+    margin: 0 auto;
+    height: 200px;
+    width: 800px;
+    padding: 10px;
+    font-size: 20pt;
+    background: #000000aa;
+    color: #fff;
+    border: solid #111111 3px;
+    border-radius: 12px;
+}
+.keyboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #c9bc95;
+    border: solid #111111 6px;
+    border-radius: 12px;
+
+
+    &--row {
+        display: flex;
+        gap: 10px;
+    }
+    &--button {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        color: #ffffff;
+        background: #333333;
+        border-radius: 6px;
+        cursor: pointer;
+        user-select: none;
+        transition: border-radius 0.3s, background-color 0.3s;
+        text-align: center;
+        line-height: 40px;
+        box-shadow: 1px 1px 5px black;
+
+        &:hover{
+            background: #777c2d;
+        }
+    }
+}
+
+.key {
+
+    &_Backspace {
+        width: 100px;
+    }
+    &_Tab {
+        width: 50px;
+    }
+    &_CapsLock {
+        width: 80px;
+    }
+    &_Enter {
+        width: 110px;
+    }
+    &_ShiftLeft {
+        width: 100px;
+    }
+    &_ShiftRight {
+        width: 90px;
+    }
+    &_Space {
+        width: 300px;
+    }
+}
+
+.dark {
+    font-weight: 600;
+    background-color: #222222;
+}
+
+.button--span {
+    display: block;
+    min-height: 40px;
+    text-shadow: 0 0 2px #222222;
+}
+
+.pushed {
+    height: 38px;
+    background: #dddf5a;
+    box-shadow: none;
+    transition: background-color 0.2s;
+    &:hover{
+        background: #dddf5a;
+    }
+}
