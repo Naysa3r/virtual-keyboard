@@ -2,13 +2,29 @@ body {
     margin: 0;
     padding: 0;
 }
+p {
+    margin: 40px auto;
+    text-align: center;
+    font-family: "Trebuchet MS", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+    color: #ffffff;
+    .color {
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        font-weight: 500;
+        font-size: 20pt;
+        color: #e6ff5a;
+        text-shadow: 0 0 4px #000000;
+    }
+}
+
 .wrapper {
     margin: 0 auto;
     font-family: "Trebuchet MS", "Helvetica", sans-serif;
     font-weight: 500;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     height: 100vh;
     background: radial-gradient(circle, rgba(237,246,6,1) 0%, rgba(120,129,0,1) 35%, rgba(40,39,39,1) 100%);
@@ -93,6 +109,7 @@ textarea {
 .button--span {
     display: block;
     min-height: 40px;
+    text-shadow: 0 0 2px #222222;
 }
 
 .pushed {
